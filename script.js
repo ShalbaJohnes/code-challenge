@@ -1,14 +1,10 @@
-function gradeCalculator(){
-    let marks = prompt("Enter student marks(0-100):"); //Prompts the user for input
-}
-marks = parseFloat(marks); //Convert the input to a number
-if(isNaN(marks)|| marks< 0 || marks > 100){
-    alert("Invalid input.Please enter a number between 0 and 100.");
-    return; // Exits the function if the input is void
-}
-  
-let grade;
-if (marks > 79){
+let mark = (prompt("Enter marks here"));  //this prompts user to fill their marks 
+    let grade        //declares a variable to hold the grade
+
+       if (mark < 0 || mark > 100 || isNaN(mark)) {     //checks whether input is out of range or an invalid no.
+            grade = "Invalid input! Enter a number between 0 and 100.";   //sets grade var to an error message
+                     }
+else if (marks >= 79){
     grade = "A";
 }
 else if (marks >= 60){
@@ -23,3 +19,5 @@ else if (marks >= 40){
 else {
     grade = "E";
 }
+alert(grade);       //this displays the grade in an alert box
+    
