@@ -1,19 +1,19 @@
 let mark = (prompt("Enter marks here"));  //this prompts user to fill their marks 
-    let grade        //declares a variable to hold the grade
+   let grade        //declares a variable to hold the grade
 
-       if (mark < 0 || mark > 100 || isNaN(mark)) {     //checks whether input is out of range or an invalid no.
-            grade = "Invalid input! Enter a number between 0 and 100.";   //sets grade var to an error message
-                     }
-else if (marks >= 79){
+    if (mark < 0 || mark > 100 || isNaN(mark)) {     //checks whether input is out of range or an invalid no.
+      grade = "Invalid input! Enter a number between 0 and 100.";   //sets grade var to an error message
+}
+else if (mark >=79){
     grade = "A";
 }
-else if (marks >= 60){
+else if (mark >=60){
     grade = "B";
 }
-else if (marks >= 49){
+else if (mark >=49){
     grade = "C";
 }
-else if (marks >= 40){
+else if (mark >=40){
     grade = "D";
 }
 else {
