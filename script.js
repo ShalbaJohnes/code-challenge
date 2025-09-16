@@ -4,12 +4,20 @@ let mark = (prompt("Enter marks here"));  //this prompts user to fill their mark
     if (mark < 0 || mark > 100 || isNaN(mark)) {     //checks whether input is out of range or an invalid no.
       grade = "Invalid input! Enter a number between 0 and 100.";   //sets grade var to an error message
 }
-else if (mark >=79){
+else if (mark >= 79) {
     grade = "A";
 }
-x}
+else if (mark >= 60) {
+    grade = "B";
+}
+else if (mark >= 49) {
+    grade = "c";
+}
+else if (mark >= 40) {
+    grade = "D";
+}
 else {
     grade = "E";
 }
-alert(grade);       //this displays the grade in an alert box
+alert(grade);       // displays the grade in the alert box
     
