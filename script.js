@@ -7,15 +7,7 @@ let mark = (prompt("Enter marks here"));  //this prompts user to fill their mark
 else if (mark >=79){
     grade = "A";
 }
-else if (mark >=60){
-    grade = "B";
-}
-else if (mark >=49){
-    grade = "C";
-}
-else if (mark >=40){
-    grade = "D";
-}
+x}
 else {
     grade = "E";
 }
